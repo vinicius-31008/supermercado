@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta e Total</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Consulta e Total</h1>
+
+        <!-- Formulário de busca de CPF -->
+        <form action="buscar.php" method="GET">
+            <label for="cpf">CPF:</label>
+            <input type="text" name="cpf" id="cpf" placeholder="Digite o CPF" required>
+            <input type="submit" value="BUSCAR">
+        </form>
+
+        <hr>
+
+        <!-- Seção de resultados -->
+        <form class="result">
+            <p><strong>Nome:</strong> <span>Nome do cliente</span></p>
+            <p><strong>Produto:</strong> <span>Produto relacionado</span></p>
+            <p><strong>Valor:</strong> <span>R$ 00,00</span></p>
+        </form>
+
+        <hr>
+
+        <!-- Seção do Total -->
+        <div class="total-section">
+            <p><strong>Total: R$ 00,00</strong></p>
+        </div>
+
+        <hr>
+
+        <!-- Link para voltar ao estoque -->
+        <div class="footer">
+            <p><a href="estoque.php">Voltar ao Estoque</a></p>
+        </div>
+    </div>
+</body>
+</html>
