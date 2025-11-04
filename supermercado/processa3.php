@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro Realizado</title>
+    <title>Cadastro de produto realizado</title>
     <style>
         /* Estilo geral */
         body {

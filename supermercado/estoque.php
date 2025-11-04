@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consulta no estoque</title>
+    <title>Estoque</title>
     <style>
         body {
             font-family: 'Poppins', Arial, sans-serif;
@@ -85,6 +85,25 @@
                 font-size: 22px;
             }
         }
+
+        button {
+            background-color: #8e24aa;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1em;
+            font-weight: 500;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 220px;
+        }
+
+        button:hover {
+            background-color: #ab47bc;
+            transform: scale(1.05);
+        }
+
     </style>
 </head>
 <body>
@@ -113,14 +132,14 @@
                 echo "<td>$nome_prod</td>";
                 echo "<td>$prod_quant</td>";
                 echo "<td><a class='sim' href='excluir_estoque.php?id=$codigo_prod'>SIM</a></td>";
-                echo "<td><a class='sim' href='alterar_clientes.php?id=$codigo_prod'>SIM</a></td>";
+                echo "<td><a class='sim' href='alterar_estoque.php?id=$codigo_prod'>SIM</a></td>";
                 echo "</tr>";
             }
 
             mysqli_close($conexao);
             ?>
 
-            <a href="estoque.php"><button>Voltar</button></a>
+            <a href="cadastros_adm.php"><button>Voltar</button></a>
         </table>
     </div>
 </body>
