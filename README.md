@@ -43,8 +43,8 @@ CREATE TABLE vendas (
     ven_id_cliente int, 
     ven_total int, 
     ven_id_produto int, 
-
-Fazendo a criação correta do banco de dados e mantendo a estrutura de arquivos o codigo deve funcionar sem grandes problemas
     ven_quantidade int, 
     ven_valor_unitario int
 );
+
+Fazendo a criação correta do banco de dados e mantendo a estrutura de arquivos o codigo deve funcionar sem grandes problemas
